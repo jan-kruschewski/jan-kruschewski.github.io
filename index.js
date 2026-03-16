@@ -1,3 +1,17 @@
+// Mobile parallax: shift portrait image up as user scrolls
+function updateMobileParallax() {
+  const img = document.querySelector('.video_container img');
+  if (!img) return;
+  if (window.innerWidth <= 768) {
+    const move = Math.min(window.scrollY * 0.22, 28);
+    img.style.transform = `translateY(-${move}px)`;
+  } else {
+    img.style.transform = '';
+  }
+}
+window.addEventListener('scroll', updateMobileParallax, { passive: true });
+window.addEventListener('resize', updateMobileParallax);
+
 // Select all accordions
 const accordions = document.querySelectorAll(".accordion");
 
