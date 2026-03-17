@@ -223,7 +223,7 @@ select {
     display: flex;
     position: relative;
     height: 100%;
-    background-color: aqua;
+    background-color: black;
 }
 
 .video_container video {
@@ -525,7 +525,8 @@ button[aria-expanded="true"] .cross::after {
     .left-col {
         flex: none;
         width: 100%;
-        height: clamp(2.5rem, 12vw, 5.5rem);
+        height: calc(clamp(2.5rem, 12vw, 5.5rem) + env(safe-area-inset-top));
+        padding-top: env(safe-area-inset-top);
         position: sticky;
         top: 0;
         z-index: 1;
