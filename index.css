@@ -286,14 +286,14 @@ select {
 .right-col {
     margin-left: -2em;
     flex: 1;
-    padding-top: 3em;
+    padding-top: 1.5em;
     overflow: auto;
     z-index: 2;
 }
 
 .content {
     max-width: 700px;
-} 
+}
 
 .sektion {
     display: flex;
@@ -307,6 +307,8 @@ select {
     color: white;
     position: sticky;
     top:0;
+    white-space: nowrap;
+    padding-bottom: 0.15em;
 }
 
 .sektion .rechts {
@@ -332,6 +334,16 @@ select {
     font-weight: 400;
     line-height: 1.2;
     text-align: justify;
+}
+
+/* About / bio: more breathing room between lines and paragraphs */
+.inhalte.bio p {
+    line-height: 1.35;
+    text-align: left;
+}
+
+.inhalte.bio p + p {
+    margin-top: 0.5em;
 }
 
 .sektion ul {
@@ -536,6 +548,9 @@ button[aria-expanded="true"] .cross::after {
     .video_container img {
         height: 280%;
         top: 0%;
+        /* which part of the photo shows on mobile: 1st value = horizontal,
+           2nd value = vertical (0% = top, 50% = middle, 100% = bottom) */
+        object-position: center 15%;
     }
 
     .kopf {
