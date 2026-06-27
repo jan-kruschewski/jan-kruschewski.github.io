@@ -13,17 +13,17 @@
   <link rel="stylesheet" href="index.css">
   <title>Jan Kruschewski | Mathematics</title>
 
-<!--   MathJax for LaTeX rendering
+<!-- MathJax for LaTeX rendering -->
   <script>
     MathJax = {
       tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
       },
       svg: { fontCache: 'global' }
     };
   </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script> -->
+  <script id="MathJax-script" async src="./mathjax/tex-svg.js"></script>
 </head>
 
 
@@ -52,12 +52,14 @@
 
           <div class="sektion">
             <h2>About</h2>
-              <div class="inhalte author">
-                <p bold>
-                  Hi, there! My name is Jan Kruschewski. I am a postdoctoral researcher at the Institute of Discrete Mathematics and Geometry at <a href="https://www.tuwien.at" target="_blank" rel="noopener noreferrer">TU Wien</a>. 
-                  <br>
+              <div class="inhalte author bio">
+                <p>
+                  Hi, there! My name is Jan Kruschewski. I am a postdoctoral researcher at the Institute of Discrete Mathematics and Geometry at <a href="https://www.tuwien.at" target="_blank" rel="noopener noreferrer">TU Wien</a>.
+                </p>
+                <p>
                   I received my PhD in June 2025 from the <a href="https://www.uni-muenster.de/de/" target="_blank" rel="noopener noreferrer">University of Münster</a> under the supervision of <a href="https://sites.google.com/site/schlutzenberg/"  target="_blank" rel="noopener noreferrer">Farmer Schlutzenberg</a>.
-                  <br>
+                </p>
+                <p>
                   My main research areas are mathematical logic and set theory. In my research I focus on inner model theory, large cardinals, determinacy, and weak set theories.
                 </p>
               </div>
@@ -83,8 +85,8 @@
                     <div class="accordion-content" aria-hidden="true">
                     <div>
                     <p class="abstract">
-                      Let Σ1-KP be Kripke-Platek set theory where the full foundation scheme is replaced with ∈-Foundation and Th∞ be the theory which consists of Σ1-KP and the statement “Vλ exists, where λ is a limit of Woodin cardinals”. Let ThAD be the theory which consists of Σ1-KP, “V= L(R)”, “P(ω) exists”, the Axiom of Determinacy, and the statement “there is a Σ1-elementary substructure which contains the reals”. We will show in the metatheory ZFC that if Con(Th∞) holds, then Con(ThAD) holds.
-                      The proof involves a variant of the derived model theorem. The construction of the derived model proceeds by first identifying its Σ1 theory in real parameters via mouse witnesses and then constructing an appropriate term model from this theory. The appropriate version of the key reflection lemma which is used in the classical proof of the derived model theorem is then shown for this term model.
+                      Let \(\Sigma_1\text{-}\mathsf{KP}\) be Kripke-Platek set theory where the full foundation scheme is replaced with \(\in\text{-}\mathsf{Foundation}\) and \(\mathsf{Th}_\infty\) be the theory which consists of \(\Sigma_1\text{-}\mathsf{KP}\) and the statement “\(V_\lambda\) exists, where \(\lambda\) is a limit of Woodin cardinals”. Let \(\mathsf{Th}_{\mathrm{AD}}\) be the theory which consists of \(\Sigma_1\)-KP, “\(V = L(\mathbb{R})\)”, “\(\mathcal{P}(V_{\omega+1})\) exists”, the Axiom of Determinacy, and the statement “there is \(\alpha\) such that \L_\alpha(\mathbb{R}) \prec_{\Sigma_1} L(\mathbb{R}\)”. We will show in the metatheory \(\mathsf{ZFC}\) that if \(\mathrm{Con}(\mathsf{Th}_\infty)\) holds, then \(\mathrm{Con}(\mathsf{Th}_{\mathsf{AD}})\) holds.
+                      The proof involves a variant of the derived model theorem ``in the codes''. The construction of the derived model proceeds by first identifying its \(\Sigma_1\) theory in real parameters via mouse witnesses and then constructing an appropriate term model from this theory. The appropriate version of the key reflection lemma which is used in the classical proof of the derived model theorem is then shown for this term model.
                     </p>
                   </div>
                 </div>
@@ -110,11 +112,11 @@
                   <div class="accordion-content" aria-hidden="true">
                     <div>
                       <p class="abstract">
-                        Let n≥1 and assume that there is a Woodin cardinal. Fix x∈ℝ and let α be the least β such that
+                        Let \(n \geq 1\) and assume that there is a Woodin cardinal. Fix \(x \in \mathbb{R}\) and let \(\alpha\) be the least \(\beta\) such that
                         <br>
-                        Lβ[x]⊨Σn-KP+∃κ(‘‘κ is inaccessible and κ+ exists").
+                        \(L_\beta[x] \models \Sigma_n\text{-}\mathsf{KP} + \exists \kappa\,(\kappa \text{ is inaccessible and } \kappa^+ \text{ exists})\).
                         <br>
-                        We adapt the analysis of HODL[x,G] as a strategy mouse to Lαx[x,G] for a cone of reals x. That is, we identify a mouse n-ad and define a class H⊆Lαx[x,G] as a natural analogue of HODL[x,G]⊆L[x,G], and show that H=M∞[Σ0], where M∞ is an iterate of n-ad and Σ0 a fragment of its iteration strategy.
+                        We adapt the analysis of \(\mathrm{HOD}^{L[x,G]}\) as a strategy mouse to \(L_{\alpha_x}[x,G]\) for a cone of reals \(x\). That is, we identify a mouse \(\mathcal{<}n\)-ad and define a class \(H \subseteq L_{\alpha_x}[x,G]\) as a natural analogue of \(\mathrm{HOD}^{L[x,G]} \subseteq L[x,G]\), and show that \(H = M_\infty[\Sigma_0]\), where \(M_\infty\) is an iterate of \(n\)-ad and \(\Sigma_0\) a fragment of its iteration strategy.
                       </p>
                     </div>
                   </div>
@@ -134,9 +136,9 @@
                   <div class="accordion-content" aria-hidden="true">
                     <div>
                       <p class="abstract">
-                        We investigate Steel's conjecture in 'The Core Model Iterability Problem', that if W and R are Ω+1-iterable, 1-small weasels, then W≤*R iff there is a club C ⊂ Ω such that for all α∈C, if α is regular, then the cardinal successor of α in W is less or equal than the cardinal successor of α in R . We will show that the conjecture fails, assuming that there is an iterable premouse which models KP and which has a Σ1-Woodin cardinal. On the other hand, we show that assuming there is no transitive model of KP with a Woodin cardinal the conjecture holds.
+                        We investigate Steel's conjecture in 'The Core Model Iterability Problem', that if \(W\) and \(R\) are \(\Omega+1\)-iterable, 1-small weasels, then \(W \leq^* R\) iff there is a club \(C \subset \Omega\) such that for all \(\alpha \in C\), if \(\alpha\) is regular, then the cardinal successor of \(\alpha\) in \(W\) is less or equal than the cardinal successor of \(\alpha\) in \(R\). We will show that the conjecture fails, assuming that there is an iterable premouse which models KP and which has a \(\Sigma_1\)-Woodin cardinal. On the other hand, we show that assuming there is no transitive model of KP with a Woodin cardinal the conjecture holds.
                         <br>
-                        In the course of this we will also show that if M is an iterable admissible premouse with a largest, regular, uncountable cardinal δ, and ℙ is a forcing poset with the δ-c.c. in M, and g is M-generic, but not necessarily Σ1-generic, M[g] is a model of KP. Moreover, if M is such a mouse and T is maximal normal iteration tree on M such that T is non-dropping on its main branch, then its last model is again an iterable admissible premouse with a largest regular and uncountable cardinal. At last, we answer another open question from 'The Core Model Iterability Problem' regarding the S-hull property.
+                        In the course of this we will also show that if \(M\) is an iterable admissible premouse with a largest, regular, uncountable cardinal \(\delta\), and \(\mathbb{P}\) is a forcing poset with the \(\delta\)-c.c. in \(M\), and \(g\) is \(M\)-generic, but not necessarily \(\Sigma_1\)-generic, \(M[g]\) is a model of KP. Moreover, if \(M\) is such a mouse and \(T\) is maximal normal iteration tree on \(M\) such that \(T\) is non-dropping on its main branch, then its last model is again an iterable admissible premouse with a largest regular and uncountable cardinal. At last, we answer another open question from 'The Core Model Iterability Problem' regarding the \(S\)-hull property.
                       </p>
                     </div>
                   </div>
